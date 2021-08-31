@@ -1,6 +1,7 @@
 <%
 var subtitle = page.subtitle || page.title
 var banner_img = page.banner_img || theme.index.banner_img
+var banner_info = page.banner_info
 var banner_img_height = page.banner_img_height || theme.index.banner_img_height
 var banner_mask_alpha = page.banner_mask_alpha || theme.index.banner_mask_alpha
 var colorSchema = theme.dark_mode && theme.dark_mode.enable && theme.dark_mode.default ? theme.dark_mode.default : ''
@@ -38,6 +39,15 @@ var colorSchema = theme.dark_mode && theme.dark_mode.enable && theme.dark_mode.d
           <% } %>
         </div>
       </div>
+      <% if (banner_info) { if (banner_info.link) { %>
+        <a class="page-header banner-info" target="_blank" <%- banner_info.link && `href=${banner_info.link}` %> >
+         <%- banner_info.text %> 
+        </a>
+        <% } else { %>
+          <div class="page-header banner-info">
+            <%- banner_info.text %> 
+          </div>
+      <% }} %>
     </div>
   </header>
 
