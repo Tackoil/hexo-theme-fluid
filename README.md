@@ -1,3 +1,5 @@
+> 　　该仓库经过 Tackoil 修改。改动内容请查阅 release 中的changelog。此外该仓库仅针对个人需求进行修改，预计不会与原仓库合并。
+
 <p align="center">
   <img alt="Fluid Logo" src="https://avatars2.githubusercontent.com/t/3419353?s=280&v=4" width="128">
 </p>
