@@ -414,6 +414,13 @@ index:
   # Path of Banner image, can be a relative path or an absolute path, the same on other pages
   banner_img: /img/default.png
 
+  # 首页 Banner 头图的描述信息，以下相同
+  banner_info:
+    # 文字信息，将显示在屏幕上
+    text: ""
+    # 链接信息，点击后跳转，该项可省略
+    # info: ""
+
   # 头图高度，屏幕百分比
   # Height ratio of banner image
   # Available: 0 - 100
@@ -487,6 +494,13 @@ post:
   banner_img: /img/default.png
   banner_img_height: 70
   banner_mask_alpha: 0.3
+
+  # 首页 Banner 头图的描述信息。
+  banner_info:
+    # 文字信息，将显示在屏幕上
+    text: ""
+    # 链接信息，点击后跳转，该项可省略
+    # info: ""
 
   # 文章在首页的默认封面图，当没有指定 index_img 时会使用该图片，若两者都为空则不显示任何图片
   # Path of the default post cover when `index_img` is not set. If both are empty, no image will be displayed
@@ -779,6 +793,9 @@ archive:
   banner_img_height: 60
   banner_mask_alpha: 0.3
   subtitle:
+  banner_info:
+    text: ""
+    # info: ""
 
 
 #---------------------------
@@ -791,6 +808,9 @@ category:
   banner_img_height: 60
   banner_mask_alpha: 0.3
   subtitle:
+  banner_info:
+    text: ""
+    # info: ""
 
   # 分类的排序字段，前面带减号是倒序，不带减号是正序
   # Sort field for categories, with a minus sign is reverse order
@@ -818,6 +838,9 @@ category:
 tag:
   enable: true
   banner_img: /img/default.png
+  banner_info:
+    text: ""
+    # info: ""
   banner_img_height: 80
   banner_mask_alpha: 0.3
   subtitle:
@@ -836,6 +859,9 @@ tag:
 about:
   enable: true
   banner_img: /img/default.png
+  banner_info:
+    text: ""
+    # info: ""
   banner_img_height: 60
   banner_mask_alpha: 0.3
   subtitle:
@@ -859,6 +885,9 @@ about:
 #---------------------------
 page:
   banner_img: /img/default.png
+  banner_info:
+    text: ""
+    # info: ""
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
@@ -870,6 +899,9 @@ page:
 page404:
   enable: true
   banner_img: /img/default.png
+  banner_info:
+    text: ""
+    # info: ""
   banner_img_height: 85
   banner_mask_alpha: 0.3
   subtitle: "Page not found"
@@ -882,6 +914,9 @@ page404:
 links:
   enable: true
   banner_img: /img/default.png
+  banner_info:
+    text: ""
+    # info: ""
   banner_img_height: 60
   banner_mask_alpha: 0.3
   subtitle:
