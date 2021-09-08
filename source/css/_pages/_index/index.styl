@@ -55,6 +55,9 @@
     -webkit-box-orient vertical
     -webkit-line-clamp 3
 
+.index-divider
+  display none
+
 @media (max-width: 767px)
   .index-info
     padding-top 1.25rem
@@ -70,3 +73,16 @@
 
     .index-pin
       font-size 1.25rem
+
+  .index-divider
+    display unset
+    position relative
+    width 80%
+    height 1px
+    background var(--divider-color)
+
+    &-pic
+      top: -24px
+
+    &-text
+      top: -14px
