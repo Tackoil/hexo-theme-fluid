@@ -6,6 +6,7 @@ page.banner_img = theme.index.banner_img
 page.banner_info = theme.index.banner_info
 page.banner_img_height = theme.index.banner_img_height
 page.banner_mask_alpha = theme.index.banner_mask_alpha
+page.indent = theme.index.indent
 %>
 
 <% page.posts.each(function (post, post_index) { %>
@@ -31,7 +32,7 @@ page.banner_mask_alpha = theme.index.banner_mask_alpha
         </a>
       </h1>
 
-      <p class="index-excerpt">
+      <p class="index-excerpt <%= page.indent ? 'index-excerpt-indent' : ''%>">
         <a href="<%- post_url %>" target="<%- theme.index.post_url_target %>">
           <% var excerpt = '' %>
           <% if(post.description) { %>

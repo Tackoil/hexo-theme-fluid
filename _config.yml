@@ -421,6 +421,8 @@ index:
     # 链接信息，点击后跳转，该项可省略
     # info: ""
 
+  indent: true
+
   # 头图高度，屏幕百分比
   # Height ratio of banner image
   # Available: 0 - 100
