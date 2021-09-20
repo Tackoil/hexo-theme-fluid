@@ -3,6 +3,7 @@ page.banner_img = page.banner_img || theme.post.banner_img
 page.banner_info = page.banner_info || theme.post.banner_info
 page.banner_img_height = page.banner_img_height || theme.post.banner_img_height
 page.banner_mask_alpha = page.banner_mask_alpha || theme.post.banner_mask_alpha
+page.indent = page.indent !== undefined ? page.indent : theme.post.indent
 %>
 
 <div class="container-fluid nopadding-x">
@@ -23,7 +24,7 @@ page.banner_mask_alpha = page.banner_mask_alpha || theme.post.banner_mask_alpha
                 <% } %>
               </p>
             <% } %>
-            <div class="markdown-body">
+            <div class="markdown-body <%= page.indent ? 'markdown-indent' : ''%>">
               <%- page.content %>
             </div>
             <hr>

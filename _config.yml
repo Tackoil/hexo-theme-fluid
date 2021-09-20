@@ -502,6 +502,9 @@ post:
     # 链接信息，点击后跳转，该项可省略
     # info: ""
 
+  # 文章页的首行缩进，启用时首行缩进为2。
+  indent: true
+
   # 文章在首页的默认封面图，当没有指定 index_img 时会使用该图片，若两者都为空则不显示任何图片
   # Path of the default post cover when `index_img` is not set. If both are empty, no image will be displayed
   default_index_img:
