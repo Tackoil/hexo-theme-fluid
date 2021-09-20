@@ -865,6 +865,7 @@ about:
   banner_info:
     text: ""
     # info: ""
+  indent: true
   banner_img_height: 60
   banner_mask_alpha: 0.3
   subtitle:
