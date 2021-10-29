@@ -17,8 +17,8 @@ page.indent = theme.index.indent
       <% } %>
     <% if(index_img) { %>
       <div class="col-12 col-md-4 m-auto index-img">
-        <a href="<%- post_url %>" target="<%- theme.index.post_url_target %>">
-          <img src="<%- url_for(index_img) %>" alt="<%= post.title %>">
+        <a href="<%= post_url %>" target="<%- theme.index.post_url_target %>">
+          <img src="<%= url_for(index_img) %>" alt="<%= post.title %>">
         </a>
       </div>
     <% } %>
@@ -27,13 +27,13 @@ page.indent = theme.index.indent
         <% if (theme.index.post_sticky && theme.index.post_sticky.enable && post.sticky > 0) { %>
           <i class="index-pin <%= theme.index.post_sticky && theme.index.post_sticky.icon %>" title="Pin on top"></i>
         <% } %>
-        <a href="<%- post_url %>" target="<%- theme.index.post_url_target %>">
+        <a href="<%= post_url %>" target="<%- theme.index.post_url_target %>">
           <%= post.title %>
         </a>
       </h1>
 
       <p class="index-excerpt <%= page.indent ? 'index-excerpt-indent' : ''%>">
-        <a href="<%- post_url %>" target="<%- theme.index.post_url_target %>">
+        <a href="<%= post_url %>" target="<%- theme.index.post_url_target %>">
           <% var excerpt = '' %>
           <% if(post.description) { %>
             <% excerpt = post.description %>
