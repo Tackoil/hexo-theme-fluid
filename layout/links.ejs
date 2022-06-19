@@ -6,6 +6,7 @@ page.banner_img = theme.links.banner_img
 page.banner_info = theme.links.banner_info
 page.banner_img_height = theme.links.banner_img_height
 page.banner_mask_alpha = theme.links.banner_mask_alpha
+page.comment = theme.links.comments.type
 %>
 
 <div class="row links">
@@ -30,17 +31,11 @@ page.banner_mask_alpha = theme.links.banner_mask_alpha
   <% } %>
 </div>
 
-<% if(theme.links.custom.enable && theme.links.custom.content) { %>
+<% if(theme.links.custom && theme.links.custom.enable && theme.links.custom.content) { %>
   <!-- Custom -->
   <div class="custom mx-auto">
     <%- theme.links.custom.content %>
   </div>
 <% } %>
 
-<% if(theme.links.comments.enable) { %>
-  <!-- Comments -->
-  <article class="comments" id="comments">
-    <% var type = '_partial/comments/' + theme.links.comments.type %>
-    <%- partial(type) %>
-  </article>
-<% } %>
+<%- inject_point('linksComments') %>
